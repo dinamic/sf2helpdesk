@@ -6,6 +6,10 @@ framework:
     session:
         storage_id: session.storage.mock_file
 
+doctrine:
+    dbal:
+        dbname:   sf2helpdesk_test
+
 web_profiler:
     toolbar: false
     intercept_redirects: false
