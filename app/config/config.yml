@@ -1,12 +1,18 @@
 imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
+
+    # Doctrine
     - { resource: doctrine.yml }
+
+    # Sonata and relateds
     - { resource: fos_user.yml }
     - { resource: sonata/sonata_cache.yml }
     - { resource: sonata/sonata_user.yml }
     - { resource: sonata/sonata_block.yml }
     - { resource: sonata/sonata_admin.yml }
+
+    # Services
     - { resource: services.yml }
 
 framework:
