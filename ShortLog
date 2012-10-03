@@ -1,0 +1,8 @@
+Julio Antúnez Tarín (6):
+      - First sending.
+      - Adding database by environment.
+      - Added Doctrine Fixtures bundle.
+      - First build.
+      - Fixed SonataAdminBundle inconsistent behaviour with field null values.
+      - Merge branch 'feature-sonata-admin' into develop
+

@@ -1,0 +1,36 @@
+commit 0be5e4c29f5364bd0e0c4bc824bc3857a83af7e3
+Merge: 88587d9 5d788ff
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Wed Oct 3 19:55:53 2012 +0200
+
+    - Merge branch 'feature-sonata-admin' into develop
+
+commit 5d788ff162cce2f5df5e8ce3440a050ef98116a0
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Wed Oct 3 19:54:41 2012 +0200
+
+    - Fixed SonataAdminBundle inconsistent behaviour with field null values.
+
+commit 2a375670b0cf596b3d90229b532dd34796380eae
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Wed Oct 3 04:24:23 2012 +0200
+
+    - First build.
+
+commit 71b919a1039ed2a25f4f52f8de2314a55b91b3e1
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Sat Sep 29 21:12:05 2012 +0200
+
+    - Added Doctrine Fixtures bundle.
+
+commit 284bc7e59ac03714303b78416a47b0f053a4f20a
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Sat Sep 29 20:58:44 2012 +0200
+
+    - Adding database by environment.
+
+commit 88587d9101b41d8c811592fcc8aad1a8f7d32f35
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Sat Sep 29 20:47:55 2012 +0200
+
+    - First sending.
