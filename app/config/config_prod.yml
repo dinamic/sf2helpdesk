@@ -1,7 +1,9 @@
 imports:
     - { resource: config.yml }
 
-#doctrine:
+doctrine:
+    dbal:
+        dbname:   sf2helpdesk
 #    orm:
 #        metadata_cache_driver: apc
 #        result_cache_driver: apc
