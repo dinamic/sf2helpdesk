@@ -4,10 +4,10 @@ imports:
 doctrine:
     dbal:
         dbname:   sf2helpdesk
-    orm:
-        metadata_cache_driver: apc
-        result_cache_driver: apc
-        query_cache_driver: apc
+#    orm:
+#        metadata_cache_driver: apc
+#        result_cache_driver: apc
+#        query_cache_driver: apc
 
 monolog:
     handlers:

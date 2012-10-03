@@ -1,0 +1,18 @@
+#
+# more information can be found here http://sonata-project.org/bundles/cache
+#
+sonata_cache:
+    caches:
+#        esi:
+#            servers:
+#                - varnishadm -T 127.0.0.1:2000 {{ COMMAND }} "{{ EXPRESSION }}"
+        memcached:
+            prefix: memcachedcache     # prefix to ensure there is no clash between instances
+            servers:
+                - {host: 127.0.0.1, port: 11211, weight: 1}
+
+        apc:
+            token:  s3cur3   # token used to clear the related cache
+            prefix: apccache     # prefix to ensure there is no clash between instances
+            servers:
+                - { domain: sf2helpdesk, ip: 127.0.0.1, port: 80}

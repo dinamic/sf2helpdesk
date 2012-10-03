@@ -1,0 +1,17 @@
+services:
+
+#  sonata.admin.user_extension:
+#      class: Application\Sonata\UserBundle\Admin\Model\UserAdmin
+#      tags:
+#          - { name: sonata.admin.extension, target: sonata.user.admin.user }
+#      arguments: [null, Application\Sonata\UserBundle\Entity\User, ApplicationSonataUserBundle:UserAdmin]
+
+  twig.extension.text:
+    class: Twig_Extensions_Extension_Text
+    tags:
+    - { name: twig.extension }
+
+  twig.extension.debug:
+    class: Twig_Extensions_Extension_Debug
+    tags:
+    - { name: twig.extension }
