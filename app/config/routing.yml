@@ -10,68 +10,36 @@ fos_user_security:
 #        _locale: %locale%
 sonata_user_profile:
     resource: "@SonataUserBundle/Resources/config/routing/profile.xml"
-    prefix:   /{_locale}/profile
-    requirements:
-        _locale: en|es|fr|de
-    defaults:
-        _locale: %locale%
+    prefix:   /profile
 
 fos_user_register:
     resource: "@FOSUserBundle/Resources/config/routing/registration.xml"
-    prefix:   /{_locale}/register
-    requirements:
-        _locale: en|es|fr|de
-    defaults:
-        _locale: %locale%
+    prefix:   /register
 
 fos_user_resetting:
     resource: "@FOSUserBundle/Resources/config/routing/resetting.xml"
-    prefix:   /{_locale}/resseting
-    requirements:
-        _locale: en|es|fr|de
-    defaults:
-        _locale: %locale%
+    prefix:   /resseting
 
 fos_user_change_password:
     resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
-    prefix:   /{_locale}/change-password
-    requirements:
-        _locale: en|es|fr|de
-    defaults:
-        _locale: %locale%
+    prefix:   /change-password
 
 admin:
     resource: '@SonataAdminBundle/Resources/config/routing/sonata_admin.xml'
-    prefix:   /{_locale}/admin
-    requirements:
-        _locale: en|es|fr|de
-    defaults:
-        _locale: %locale%
+    prefix:   /admin
 
 _sonata_admin:
     resource: .
     type: sonata_admin
-    prefix:   /{_locale}/admin
-    requirements:
-        _locale: en|es|fr|de
-    defaults:
-        _locale: %locale%
+    prefix:   /admin
 
 sonata_user:
     resource: '@SonataUserBundle/Resources/config/routing/admin_security.xml'
-    prefix:   /{_locale}/admin
-    requirements:
-        _locale: en|es|fr|de
-    defaults:
-        _locale: %locale%
+    prefix:   /admin
 
 sonata_page_cache:
     resource: '@SonataCacheBundle/Resources/config/routing/cache.xml'
-    prefix:   /{_locale}
-    requirements:
-        _locale: en|es|fr|de
-    defaults:
-        _locale: %locale%
+    prefix:   /
 
 # Internal routing configuration to handle ESI
 #_internal:

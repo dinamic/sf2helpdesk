@@ -5,6 +5,12 @@ imports:
     # Doctrine
     - { resource: doctrine.yml }
 
+    # JMS i18n
+    - { resource: jms_i18n.yml }
+
+    # JMS translation
+    - { resource: jms_translation.yml }
+
     # Sonata and relateds
     - { resource: fos_user.yml }
     - { resource: sonata/sonata_cache.yml }
@@ -34,6 +40,8 @@ framework:
 twig:
     debug:            %kernel.debug%
     strict_variables: %kernel.debug%
+    globals:
+        locales:      %locales%
 #    form:
 #        resources:
 #            - 'SonataAdminBundle:Form:silex_form_div_layout.html.twig'
