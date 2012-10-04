@@ -1,3 +1,46 @@
+commit 7e94678e91d2d7d2dd4a97d5d74ba2979fb30336
+Merge: be031b1 72a8429
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Fri Oct 5 00:45:56 2012 +0200
+
+    - Merge branch 'feature-bundle-fosuser-register' into develop
+
+commit 72a8429c17ecf80c25e4b0253122b8774435adcb
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Fri Oct 5 00:45:29 2012 +0200
+
+    - Customize and prepare FOS User Bundle register form domail logic.
+
+commit be031b17b17b99bd585bd02d4aeed05cd78e51be
+Merge: 062cc5f 333d5d7
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Thu Oct 4 23:48:24 2012 +0200
+
+    - Merge branch 'feature-locales' into develop
+
+commit 333d5d7cb4263de330f32b07ccb2caa67f88ed56
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Thu Oct 4 23:45:01 2012 +0200
+
+    - Added JMS i18 Bundle, refactorized routes.
+    - Configured JMS Translator Bundle.
+    - Refactorized ACL configuration.
+    - Configured FOS User Bundle.
+    - Created unique configuration files with extra bundles.
+
+commit 062cc5f8f154c7378a69c7928d8fdae27814fe17
+Merge: f0814d7 3e56662
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Thu Oct 4 04:43:30 2012 +0200
+
+    - Merge branch 'release-1.1' into develop
+
+commit 3e56662833aab99cdad7bf3e9243eefd9d535e59
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Thu Oct 4 04:43:00 2012 +0200
+
+    - Bumped version to number 1.1.
+
 commit f0814d7591e9818498c000c0e522960b8a1519ae
 Merge: 71c0c6b 6366678
 Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
