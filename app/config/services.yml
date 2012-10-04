@@ -12,15 +12,15 @@ services:
 #          - { name: sonata.admin.extension, target: sonata.user.admin.user }
 #      arguments: [null, Application\Sonata\UserBundle\Entity\User, ApplicationSonataUserBundle:UserAdmin ]
 
-#  twig.extension.text:
-#    class: Twig_Extensions_Extension_Text
-#    tags:
-#    - { name: twig.extension }
-
 #  twig.extension.debug:
 #    class: Twig_Extensions_Extension_Debug
 #    tags:
 #    - { name: twig.extension }
+
+  twig.text_extension:
+          class: Twig_Extensions_Extension_Text
+          tags:
+              - name: twig.extension
 
   application_sonata_user.twig.extension.debug:
       class: Twig_Extension_Debug

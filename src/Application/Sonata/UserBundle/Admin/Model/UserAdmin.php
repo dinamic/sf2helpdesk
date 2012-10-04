@@ -142,8 +142,33 @@ class UserAdmin extends BaseType
 
         $formMapper
             ->with('Security')
-            ->add('token', null, array('required' => false))
-            ->add('twoStepVerificationCode', null, array('required' => false))
+                ->add('token', null, array('required' => false))
+                ->add('twoStepVerificationCode', null, array('required' => false))
             ->end();
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function preUpdate($user)
+    {
+        $this->getUserManager()->updateCanonicalFields($user);
+        $this->getUserManager()->updatePassword($user);
+    }
+
+    /**
+     * @param UserManagerInterface $userManager
+     */
+    public function setUserManager(UserManagerInterface $userManager)
+    {
+        $this->userManager = $userManager;
+    }
+
+    /**
+     * @return UserManagerInterface
+     */
+    public function getUserManager()
+    {
+        return $this->userManager;
     }
 }
