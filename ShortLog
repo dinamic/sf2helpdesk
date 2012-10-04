@@ -1,8 +1,14 @@
-Julio Antúnez Tarín (6):
+Julio Antúnez Tarín (12):
       - First sending.
       - Adding database by environment.
       - Added Doctrine Fixtures bundle.
       - First build.
       - Fixed SonataAdminBundle inconsistent behaviour with field null values.
       - Merge branch 'feature-sonata-admin' into develop
+      - Bumped version to number 1.0.
+      - Merge branch 'release-1.0' into develop
+      - Added LadybugBundle.
+      - Merge branch 'feature-bundle-ladybug' into develop
+      - Added ACL support.     - Added a new UserAdmin class with a new country test field.
+      - Merge branch 'feature-acl' into develop
 
