@@ -5,17 +5,21 @@ sonata_admin:
     title:      SF2 Help Desk
 
     security:
-        handler: sonata.admin.security.handler.role
+        handler: sonata.admin.security.handler.acl
+
         # acl security information
         information:
-            EDIT: EDIT
-            LIST: LIST
-            CREATE: CREATE
-            VIEW: VIEW
-            DELETE: DELETE
-            EXPORT: EXPORT
-            OPERATOR: OPERATOR
-            MASTER: MASTER
+            GUEST:    [VIEW, LIST]
+            STAFF:    [EDIT, LIST, CREATE]
+            EDITOR:   [OPERATOR, EXPORT]
+            ADMIN:    [MASTER]
+
+        # permissions not related to an object instance and also to be available when objects do not exist
+        # the DELETE admin permission means the user is allowed to batch delete objects
+        admin_permissions: [CREATE, LIST, DELETE, UNDELETE, EXPORT, OPERATOR, MASTER]
+
+        # permission related to the objects
+        object_permissions: [VIEW, EDIT, DELETE, UNDELETE, OPERATOR, MASTER, OWNER]
 
     templates:
         # default global templates

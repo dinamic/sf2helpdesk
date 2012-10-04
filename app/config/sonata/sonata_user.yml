@@ -2,7 +2,7 @@
 # more information can be found here http://sonata-project.org/bundles/user
 #
 sonata_user:
-    security_acl: false
+    security_acl: true
 #    impersonating_route: sonata_user_admin_security_login
 
     class:
@@ -20,3 +20,9 @@ sonata_user:
             controller:     SonataAdminBundle:CRUD
             translation:    SonataUserBundle
 
+#    profile:  # Profile Form (firstname, lastname, etc ...)
+#        form:
+#            type:               sonata_user_profile
+#            handler:            sonata.user.profile.form.handler.default
+#            name:               sonata_user_profile_form
+#            validation_groups:  [Profile]
