@@ -10,6 +10,9 @@
             <generator strategy="AUTO" />
         </id>
 
+        <field name="country" column="country" type="string" nullable="true">
+        </field>
+
     </entity>
 
 </doctrine-mapping>

@@ -1,10 +1,16 @@
+parameters:
+    # acl
+    security.acl.permission.map.class: Sonata\AdminBundle\Security\Acl\Permission\AdminPermissionMap
+
+    sonata.user.admin.user.class: Application\Sonata\UserBundle\Admin\Model\UserAdmin
+
 services:
 
-#  sonata.admin.user_extension:
+#  sonata.admin.extension:
 #      class: Application\Sonata\UserBundle\Admin\Model\UserAdmin
 #      tags:
 #          - { name: sonata.admin.extension, target: sonata.user.admin.user }
-#      arguments: [null, Application\Sonata\UserBundle\Entity\User, ApplicationSonataUserBundle:UserAdmin]
+#      arguments: [null, Application\Sonata\UserBundle\Entity\User, ApplicationSonataUserBundle:UserAdmin ]
 
 #  twig.extension.text:
 #    class: Twig_Extensions_Extension_Text

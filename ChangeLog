@@ -1,3 +1,43 @@
+commit f0814d7591e9818498c000c0e522960b8a1519ae
+Merge: 71c0c6b 6366678
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Thu Oct 4 04:41:41 2012 +0200
+
+    - Merge branch 'feature-acl' into develop
+
+commit 63666789b277af17d5f005b8d263cbb5e7a4adeb
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Thu Oct 4 04:40:15 2012 +0200
+
+    - Added ACL support.
+    - Added a new UserAdmin class with a new country test field.
+
+commit 71c0c6b62b19712ffa720c706db5f0f1a556edb9
+Merge: 3a11fe1 93f3ab2
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Wed Oct 3 20:27:15 2012 +0200
+
+    - Merge branch 'feature-bundle-ladybug' into develop
+
+commit 93f3ab2970891548ecc72f476e26d2f39f59adbe
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Wed Oct 3 20:26:25 2012 +0200
+
+    - Added LadybugBundle.
+
+commit 3a11fe181d50bd34e890ef5da4a42881452ceafd
+Merge: 0be5e4c 065ef86
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Wed Oct 3 19:58:12 2012 +0200
+
+    - Merge branch 'release-1.0' into develop
+
+commit 065ef866d4b3420b13b92e5667c12d3e34197900
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Wed Oct 3 19:57:26 2012 +0200
+
+    - Bumped version to number 1.0.
+
 commit 0be5e4c29f5364bd0e0c4bc824bc3857a83af7e3
 Merge: 88587d9 5d788ff
 Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>

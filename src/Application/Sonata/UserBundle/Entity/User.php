@@ -22,11 +22,27 @@ use Sonata\UserBundle\Entity\BaseUser as BaseUser;
  */
 class User extends BaseUser
 {
-
     /**
      * @var integer $id
      */
     protected $id;
+
+    /**
+     * @var string $country
+     */
+    protected $country;
+
+    /**
+     * Set country
+     *
+     * @param   string $country
+     *
+     * @return  User
+     */
+    public function setCountry($country)
+    {
+        $this->country = $country;
+    }
 
     /**
      * Get id
@@ -37,4 +53,16 @@ class User extends BaseUser
     {
         return $this->id;
     }
+
+    /**
+     * Get country
+     *
+     * @return  string
+     */
+    public function getCountry()
+    {
+        return $this->country;
+    }
+
+
 }
