@@ -1,0 +1,83 @@
+{% form_theme form "ApplicationSonataUserBundle:Form:field_errors.html.twig" %}
+
+<div class="page-header">
+    <h1>Register <small>new account</small></h1>
+</div>
+
+<form action="{{ path('fos_user_registration_register') }}" {{ form_enctype(form) }}
+      method="POST" class="form-horizontal fos_user_registration_register">
+
+    {% if (form.username.vars.errors is defined and form.username.vars.errors|length > 0) %}
+        {% set usernameErrorClass = 'error' %}
+    {% endif %}
+    <div class="control-group {{ usernameErrorClass|default('') }}">
+        <div class="controls">
+            <div class="input-prepend">
+                <span class="add-on"><i class="icon-user"></i></span>
+                <input class="span3" id="fos_user_registration_form_username"
+                       name="_fos_user_registration_form_username"
+                       size="16" type="text" placeholder="Username" />
+            </div>
+            {{ form_errors(form.username) }}
+        </div>
+    </div>
+
+    {% if (form.email.vars.errors is defined
+    and form.email.vars.errors|length > 0) %}
+        {% set emailErrorClass = 'error' %}
+    {% endif %}
+    <div class="control-group {{ emailErrorClass|default('') }}">
+        <div class="controls">
+            <div class="input-prepend">
+                <span class="add-on"><i class="icon-envelope"></i></span>
+                <input class="span3" id="fos_user_registration_form_email"
+                       name="_fos_user_registration_form_email"
+                       size="16" type="text" placeholder="Email" />
+            </div>
+            {{ form_errors(form.email) }}
+        </div>
+    </div>
+
+    {% if (form.plainPassword['first'].vars.errors is defined
+    and form.plainPassword['first'].vars.errors|length > 0) %}
+        {% set plainPasswordFirstErrorClass = 'error' %}
+    {% endif %}
+    <div class="control-group {{ plainPasswordFirstErrorClass|default('') }}">
+        <div class="controls">
+            <div class="input-prepend">
+                <span class="add-on"><i class="icon-wrench"></i></span>
+                <input class="span3" id="fos_user_registration_form_plainPassword_first"
+                       name="_fos_user_registration_form_plainPassword_first"
+                       size="16" type="text" placeholder="Password" />
+            </div>
+            {{ form_errors(form.plainPassword['first']) }}
+        </div>
+    </div>
+
+    {% if (form.plainPassword['second'].vars.errors is defined
+    and form.plainPassword['second'].vars.errors|length > 0) %}
+        {% set plainPasswordSecondErrorClass = 'error' %}
+    {% endif %}
+    <div class="control-group {{ plainPasswordSecondErrorClass|default('') }}">
+        <div class="controls">
+            <div class="input-prepend">
+                <span class="add-on"><i class="icon-pencil"></i></span>
+                <input class="span3" id="fos_user_registration_form_plainPassword_second"
+                       name="_fos_user_registration_form_plainPassword_second"
+                       size="16" type="text" placeholder="Confirm password" />
+            </div>
+            {{ form_errors(form.plainPassword['second']) }}
+        </div>
+    </div>
+
+    {{ form_row(form._token) }}
+
+    <div class="form-actions">
+        <input type="submit" id="_submit" name="_submit"
+               class="btn btn-primary"
+               value="{{ 'registration.submit'|trans({}, 'FOSUserBundle') }}" />
+        <input type="reset" id="_reset" name="_reset"
+               class="btn"
+               value="{{ 'registration.reset'|trans({}, 'FOSUserBundle') }}" />
+    </div>
+</form>
