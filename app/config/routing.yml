@@ -1,8 +1,15 @@
 fos_user_security:
     resource: "@FOSUserBundle/Resources/config/routing/security.xml"
 
-fos_user_profile:
-    resource: "@FOSUserBundle/Resources/config/routing/profile.xml"
+#fos_user_profile:
+#    resource: "@FOSUserBundle/Resources/config/routing/profile.xml"
+#    prefix:   /{_locale}/profile
+#    requirements:
+#        _locale: en|es|fr|de
+#    defaults:
+#        _locale: %locale%
+sonata_user_profile:
+    resource: "@SonataUserBundle/Resources/config/routing/profile.xml"
     prefix:   /{_locale}/profile
     requirements:
         _locale: en|es|fr|de
