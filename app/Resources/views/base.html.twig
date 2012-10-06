@@ -31,10 +31,18 @@
                 </a>
 
                 <div class="nav-collapse collapse">
-                    <ul class="nav pull-right">
-                    </ul>
-                    {# Language switcher #}
-                    {%  include "::language_switcher.html.twig" with { 'app': app, 'locales': locales} %}
+                    <div class="pull-right">
+                        <ul class="nav pull-left">
+                            <li><a href="{{ path('jat_frontend_home') }}">{{ 'frontend.content.header'|trans({}, "frontend") }}</a></li>
+                            <li class="active"><a href="{{ path('sonata_user_admin_security_login') }}">{{ 'sonata.admin.header'|trans({}, "frontend") }}</a></li>
+                            <li><a href="{{ path('jat_frontend_home') }}">{{ 'frontend.user.area'|trans({}, "frontend") }}</a></li>
+                            <li>{% include "ApplicationSonataUserBundle:Security:authCheck.html.twig" %}</li>
+                        </ul>
+                        {# Language switcher #}
+                        <div class="pull-right">
+                            {%  include "::language_switcher.html.twig" with { 'app': app, 'locales': locales} %}
+                        </div>
+                    </div>
                 </div><!--/.nav-collapse -->
             </div>
         </div>

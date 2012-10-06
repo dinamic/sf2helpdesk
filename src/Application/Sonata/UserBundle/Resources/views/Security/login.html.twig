@@ -1,0 +1,78 @@
+{% extends "JatFrontendBundle::layout.html.twig" %}
+
+{% block title %}
+    {% spaceless %}
+        {{ parent() }} - {{ 'security.login.submit'|trans({}, "FOSUserBundle") }}
+    {% endspaceless %}
+{% endblock %}
+
+{% block article %}
+
+    {% if is_granted('ROLE_ADMIN') %}
+        {% include "ApplicationSonataUserBundle:Security:auth.html.twig" with {'role':'admin'} %}
+
+    {% elseif is_granted('ROLE_USER') %}
+        {% include "ApplicationSonataUserBundle:Security:auth.html.twig" with {'role':'user'} %}
+
+    {% else %}
+        <div class="page-header">
+            <h1>{{ 'security.login.submit'|trans({}, "FOSUserBundle") }} <small>{{ 'security.login.subheader'|trans({}, "FOSUserBundle") }}</small></h1>
+        </div>
+
+        {% block fos_user_content %}
+            {% if error %}
+                {% set errorClass = 'error' %}
+                <div class="alert alert-error">
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                    {{ error|trans({}, 'FOSUserBundle') }}
+                </div>
+            {% endif %}
+
+            <form action="{{ path("fos_user_security_check") }}" method="post"
+                  class="form-horizontal">
+
+                <div class="control-group {{ errorClass|default('') }}">
+                    <div class="controls">
+                        <div class="input-prepend">
+                            <span class="add-on"><i class="icon-user"></i></span>
+                            <input class="span3" id="username" name="_username"
+                                   size="16" type="text" placeholder="{{ 'security.login.username'|trans({}, 'FOSUserBundle') }}"
+                                   required="required" value="{{ last_username }}">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="control-group {{ errorClass|default('') }}">
+                    <div class="controls">
+                        <div class="input-prepend">
+                            <span class="add-on"><i class="icon-lock"></i></span>
+                            <input class="span3" id="password" name="_password"
+                                   size="16" type="password"
+                                   required="required" placeholder="{{ 'security.login.password'|trans({}, 'FOSUserBundle') }}" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <div class="controls">
+                        <label class="checkbox" for="remember_me">
+                            {{ 'security.login.remember_me'|trans({}, 'FOSUserBundle') }}
+                            <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <input type="submit" id="_submit" name="_submit"
+                           class="btn btn-primary"
+                           value="{{ 'security.login.submit'|trans({}, 'FOSUserBundle') }}" />
+                    <input type="reset" id="_reset" name="_reset"
+                           class="btn"
+                           value="{{ 'security.login.reset'|trans({}, 'FOSUserBundle') }}" />
+                </div>
+
+                <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+            </form>
+        {% endblock fos_user_content %}
+    {% endif %}
+{% endblock article %}
