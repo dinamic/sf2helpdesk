@@ -1,0 +1,15 @@
+{% extends "JatFrontendBundle::layout.html.twig" %}
+
+{% block title %}
+    {% spaceless %}
+        {{ parent() }} - {{ 'frontend.content.header'|trans({}, "frontend") }}
+    {% endspaceless %}
+{% endblock %}
+
+{% block article %}
+    <h1>{{ 'frontend.content.header'|trans({}, "frontend") }}</h1>
+{% endblock %}
+
+{% block aside %}
+    <p>Lorem ipsum dot equorum</p>
+{% endblock %}

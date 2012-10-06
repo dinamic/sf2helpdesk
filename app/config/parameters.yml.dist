@@ -17,7 +17,5 @@ parameters:
     locales:
       spanish:         es
       english:         en
-      french:          fr
-      german:          de
 
     secret:           46g9641c1b0643908d6ee5d8dfcd33f9dff81783 

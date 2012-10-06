@@ -111,18 +111,7 @@ file that was distributed with this source code.
                             </ul>
 
                             {# Language switcher #}
-                            <div class="btn-group span1 pull-right">
-                                <button class="btn btn-mini"><i class="icon-flag"></i></button>
-                                <button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
-                                    <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    {% for lang, locale in locales %}
-                                        <li><a href="{{ path(app.request.attributes.get("_route"), app.request.attributes.get('_route_params')|merge({"_locale": locale})) }}">{{ lang|capitalize }}</a></li>
-                                    {% endfor %}
-                                </ul>
-                            </div>
-
+                            {%  include "::language_switcher.html.twig" with { 'app': app, 'locales': locales} %}
                         </div>
                     {% endif %}
                 </div>
@@ -221,9 +210,6 @@ file that was distributed with this source code.
             </div>
 
             {% block footer %}
-                <div class="pull-right clearfix">
-                    <span class="label"><a href="http://sonata-project.org" rel="noreferrer" style="text-decoration: none; color: black">Sonata Project</a></span>
-                </div>
             {% endblock %}
         </div>
     </body>
