@@ -1,8 +1,13 @@
-{% extends "::base.html.twig" %}
+{% extends "JatFrontendBundle::layout.html.twig" %}
 
-{% block title %}Register{% endblock %}
-{% block body %}
+{% block title %}
+    {% spaceless %}
+        {{ parent() }} - {{ 'registration.submit'|trans({}, "FOSUserBundle") }}
+    {% endspaceless %}
+{% endblock %}
+
+{% block article %}
     {% block fos_user_content %}
         {% include "ApplicationSonataUserBundle:Registration:register_content.html.twig" %}
     {% endblock fos_user_content %}
-{% endblock body %}
+{% endblock %}

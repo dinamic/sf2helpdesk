@@ -1,0 +1,17 @@
+{% extends "JatFrontendBundle::layout.html.twig" %}
+
+{% block title %}
+    {% spaceless %}
+        {{ parent() }} - {{ 'registration.submit'|trans({}, "FOSUserBundle") }} {{ 'form.register.check_email'|trans({}, "FOSUserBundle") }}
+    {% endspaceless %}
+{% endblock title %}
+
+{% block article %}
+    <div class="page-header">
+        <h1>{{ 'registration.submit'|trans({}, "FOSUserBundle") }}
+            <small>{{ 'form.register.check_email'|trans({}, "FOSUserBundle") }}</small></h1>
+    </div>
+    {% block fos_user_content %}
+        <p>{{ 'registration.check_email'|trans({'%email%': user.email}, 'FOSUserBundle') }}</p>
+    {% endblock fos_user_content %}
+{% endblock article %}

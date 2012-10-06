@@ -1,13 +1,57 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
+    <title>{% spaceless %}{% block title %}{{ 'frontend.title'|trans({}, "frontend") }}{% endblock %} | {{ 'frontend.author'|trans({}, "frontend") }}{% endspaceless %}</title>
+
+    {% block stylesheets %}{% endblock %}
+    {% block javascripts %}{% endblock %}
+
+</head>
+
+<body>
+
+{% block top %}
+    <div id="top" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <a class="btn btn-navbar" data-toggle="collapse"
+                   data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+
+                <a class="brand" href="{{ path("jat_frontend_home") }}">
+                    {{ 'frontend.title'|trans({}, "frontend") }}
+                </a>
+
+                <div class="nav-collapse collapse">
+                    <ul class="nav pull-right">
+                    </ul>
+                    {# Language switcher #}
+                    {%  include "::language_switcher.html.twig" with { 'app': app, 'locales': locales} %}
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+<div id="wrapper" class="container-fluid">
+    {% block body %}{% endblock %}
+
+    <footer class="row-fluid">
+        <div id="copyright" class="span8">
+            <p>Copyright &copy; 2.012 - {{ 'frontend.title'|trans({}, "frontend") }}.</p>
+        </div><!-- #copyright -->
+        <div class="span4">
+        </div>
+    </footer>
+</div><!-- #wrapper -->
+</body>
+
 </html>

@@ -1,0 +1,21 @@
+{% extends "JatFrontendBundle::layout.html.twig" %}
+
+{% block title %}
+    {% spaceless %}
+        {{ parent() }} - {{ 'registration.register.confirmed'|trans({}, "FOSUserBundle") }} {{ 'form.register.confirmed'|trans({}, "FOSUserBundle") }}
+    {% endspaceless %}
+{% endblock title %}
+
+{% block article %}
+    <div class="page-header">
+        <h1>{{ 'registration.register.confirmed'|trans({}, "FOSUserBundle") }}
+            <small>{{ 'form.register.confirmed'|trans({}, "FOSUserBundle") }}</small></h1>
+    </div>
+    {% block fos_user_content %}
+        <p>{{ 'registration.confirmed'|trans({'%username%': user.username}, 'FOSUserBundle') }}</p>
+        {% if app.session is not empty %}
+            {% set targetUrl = app.session.get('_security.target_path') %}
+            {% if targetUrl is not empty %}<p><a href="{{ targetUrl }}">{{ 'registration.back'|trans({}, 'FOSUserBundle') }}</a></p>{% endif %}
+        {% endif %}
+    {% endblock fos_user_content %}
+{% endblock article %}

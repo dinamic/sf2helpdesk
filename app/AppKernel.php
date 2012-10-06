@@ -45,6 +45,8 @@ class AppKernel extends Kernel
 
             // DEBUG
             new RaulFraile\Bundle\LadybugBundle\RaulFraileLadybugBundle(),
+
+            new Jat\FrontendBundle\JatFrontendBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
