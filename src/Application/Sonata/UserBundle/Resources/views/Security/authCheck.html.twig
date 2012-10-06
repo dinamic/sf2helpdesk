@@ -1,0 +1,21 @@
+{% if is_granted('ROLE_ADMIN') %}
+    {% include "ApplicationSonataUserBundle:Security:auth.html.twig"
+        with {'role':'admin', 'app': app } %}
+    {% set mark = true %}
+
+{% elseif is_granted('ROLE_USER') %}
+    {% include "ApplicationSonataUserBundle:Security:auth.html.twig"
+        with {'role':'user', 'app': app } %}
+    {% set mark = true %}
+
+{% else %}
+    <a href="{{ path('fos_user_security_login') }}">
+        <i class="icon-lock icon-white"></i>
+    </a>
+{% endif %}
+
+{% if mark is defined %}
+    <a class="auth-login" href="{{ path('fos_user_security_logout') }}">
+        <i class="icon-off icon-white"></i>
+    </a>
+{% endif %}

@@ -1,0 +1,8 @@
+parameters:
+    auth.success_handler.class: Application\Sonata\UserBundle\Authentication\SuccessHandler
+
+services:
+    auth.success_handler:
+        class: %auth.success_handler.class%
+        public: false
+        arguments:  ['@router']

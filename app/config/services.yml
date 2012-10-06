@@ -4,6 +4,8 @@ parameters:
 
     sonata.user.admin.user.class: Application\Sonata\UserBundle\Admin\Model\UserAdmin
 
+    auth.success_handler.class: Application\Sonata\UserBundle\Authentication\SuccessHandler
+
 services:
 
 #  sonata.admin.extension:
@@ -26,3 +28,8 @@ services:
       class: Twig_Extension_Debug
       tags:
            - { name: 'twig.extension' }
+
+  auth.success_handler:
+      class: %auth.success_handler.class%
+      public: false
+      arguments:  ['@router']

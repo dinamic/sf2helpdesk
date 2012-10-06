@@ -1,5 +1,10 @@
-#fos_user_security:
-#    resource: "@FOSUserBundle/Resources/config/routing/security.xml"
+jat_frontend:
+    resource: "@JatFrontendBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+fos_user_security:
+    resource: "@FOSUserBundle/Resources/config/routing/security.xml"
 
 #fos_user_profile:
 #    resource: "@FOSUserBundle/Resources/config/routing/profile.xml"

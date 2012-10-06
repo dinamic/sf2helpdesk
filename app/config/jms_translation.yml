@@ -1,9 +1,16 @@
 jms_translation:
     configs:
         app:
+            keep: true
             dirs: [%kernel.root_dir%, %kernel.root_dir%/../src]
             output_dir: %kernel.root_dir%/Resources/translations
             ignored_domains: [routes]
             excluded_names: [*TestCase.php, *Test.php]
             excluded_dirs: [cache, data, logs]
 #            extractors: [jms_i18n_routing, sonata_admin]
+        sonata_user:
+            keep: true
+            dirs: [%kernel.root_dir%/../src/Application/Sonata/UserBundle]
+            output_dir: %kernel.root_dir%/../src/Application/Sonata/UserBundle/Resources/translations
+            ignored_domains: [routes]
+            excluded_names: [*TestCase.php, *Test.php]
