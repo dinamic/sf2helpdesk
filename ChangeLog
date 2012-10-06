@@ -1,3 +1,36 @@
+commit decf55dd49e3f5efbbc71f74ff06e01dc22da610
+Merge: 6807bd9 da38970
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Sat Oct 6 20:50:14 2012 +0200
+
+    - Merge branch 'feature-bundle-fosuser-refactoring' into develop
+
+commit da389702718287d729dec466928a7b9f4a6479a2
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Sat Oct 6 20:48:41 2012 +0200
+
+    - Refactorized login via FOSUserBundle.
+    - Refactorized register via FOSUserBundle.
+
+commit 8f2e3dc15fd6ea5b24bcb59527edf2ea203f5a2e
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Sat Oct 6 16:55:03 2012 +0200
+
+    - Refactorized FOSUserBundle register domain logic.
+
+commit 6807bd9b8ce82235847be8a80be10bd07e780bab
+Merge: 7e94678 5b9efd7
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Fri Oct 5 00:47:36 2012 +0200
+
+    - Merge branch 'release-1.2' into develop
+
+commit 5b9efd72a6c974495b32ba9ac3317ddf833306aa
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Fri Oct 5 00:46:58 2012 +0200
+
+    - Bumped version to number 1.2.
+
 commit 7e94678e91d2d7d2dd4a97d5d74ba2979fb30336
 Merge: be031b1 72a8429
 Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
