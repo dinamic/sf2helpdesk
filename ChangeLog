@@ -1,3 +1,43 @@
+commit e249135aeba53f1f310494c76256fda5ff63f3f4
+Merge: 628b5d0 16a9552
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Sun Oct 7 05:20:48 2012 +0200
+
+    - Merge branch 'feature-fixtures' into develop
+
+commit 16a9552942a92fc826ff4dc22bbbbd13ee15994e
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Sun Oct 7 05:19:19 2012 +0200
+
+    - Added Doctrine fixtures for Users and Groups.
+    - Changed security strategy to role after performance issues with ACL.
+
+commit 628b5d001efccee587dec55aac9a8eeb1cff5523
+Merge: 90c72b7 fb65b06
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Sun Oct 7 01:20:16 2012 +0200
+
+    - Merge branch 'feature-frontend-theme-update' into develop
+
+commit fb65b06401a8751deed0b2b0a5ea6db3ca8b3fa4
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Sun Oct 7 01:13:19 2012 +0200
+
+    - Added new icons to Twitter Bootstrap frontend theme.
+
+commit 90c72b7113baa91b224e0a42bbb59cf5b2f6d879
+Merge: decf55d 83e46c1
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Sat Oct 6 20:52:17 2012 +0200
+
+    - Merge branch 'release-1.3' into develop
+
+commit 83e46c1a0361eae13e8990fc6cbbe0b9a6c63cd9
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Sat Oct 6 20:51:38 2012 +0200
+
+    - Burned version to number 1.3.
+
 commit decf55dd49e3f5efbbc71f74ff06e01dc22da610
 Merge: 6807bd9 da38970
 Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
