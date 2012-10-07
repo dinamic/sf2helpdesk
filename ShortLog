@@ -1,4 +1,4 @@
-Julio Antúnez Tarín (29):
+Julio Antúnez Tarín (33):
       - First sending.
       - Adding database by environment.
       - Added Doctrine Fixtures bundle.
@@ -28,4 +28,8 @@ Julio Antúnez Tarín (29):
       - Merge branch 'feature-frontend-theme-update' into develop
       - Added Doctrine fixtures for Users and Groups.     - Changed security strategy to role after performance issues with ACL.
       - Merge branch 'feature-fixtures' into develop
+      Bumped version to number 1.4.
+      - Merge branch 'release-1.4' into develop
+      - Fixed security listener to add ROLE_ADMIN mapping.
+      - Merge branch 'feature-security-roles' into develop
 
