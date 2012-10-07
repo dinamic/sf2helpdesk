@@ -1,3 +1,29 @@
+commit 6a506225e6e97d62b4d75d15186902fb13636fb2
+Merge: f25c6b8 cfe97fd
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Sun Oct 7 05:34:16 2012 +0200
+
+    - Merge branch 'feature-security-roles' into develop
+
+commit cfe97fdd35dca8c47968fc59d08c42668c618157
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Sun Oct 7 05:33:21 2012 +0200
+
+    - Fixed security listener to add ROLE_ADMIN mapping.
+
+commit f25c6b87d58fa528f769a78367f369a767a300e0
+Merge: e249135 28aa036
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Sun Oct 7 05:23:28 2012 +0200
+
+    - Merge branch 'release-1.4' into develop
+
+commit 28aa03653f3f9cf6f625daa81ad9bf763252fb7d
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Sun Oct 7 05:22:55 2012 +0200
+
+     Bumped version to number 1.4.
+
 commit e249135aeba53f1f310494c76256fda5ff63f3f4
 Merge: 628b5d0 16a9552
 Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>

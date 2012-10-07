@@ -21,7 +21,8 @@ class SuccessHandler implements AuthenticationSuccessHandlerInterface
     {
         $user = $token->getUser();
 
-        if ($user->hasRole('ROLE_SONATA_ADMIN')) {
+        if ($user->hasRole('ROLE_SONATA_ADMIN')
+            || $user->hasRole('ROLE_ADMIN')) {
             return new RedirectResponse(
                 $this->router->generate('sonata_admin_dashboard')
             );
