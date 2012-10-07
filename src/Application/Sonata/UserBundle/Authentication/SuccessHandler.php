@@ -19,15 +19,14 @@ class SuccessHandler implements AuthenticationSuccessHandlerInterface
 
     public function onAuthenticationSuccess(Request $request, TokenInterface $token)
     {
-        $roles = $token->getUser()->getRoles();
+        $user = $token->getUser();
 
-        if (in_array('ROLE_SUPER_ADMIN', $roles)
-            || in_array('ROLE_ADMIN', $roles)) {
+        if ($user->hasRole('ROLE_SONATA_ADMIN')) {
             return new RedirectResponse(
                 $this->router->generate('sonata_admin_dashboard')
             );
 
-        } elseif (in_array('ROLE_USER', $roles)) {
+        } elseif ($user->hasRole('ROLE_USER')) {
             return new RedirectResponse(
                 $this->router->generate('jat_frontend_home')
             );

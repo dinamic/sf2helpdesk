@@ -2,8 +2,8 @@
 # more information can be found here http://sonata-project.org/bundles/user
 #
 sonata_user:
-    security_acl: true
-#    impersonating_route: sonata_user_admin_security_login
+    security_acl: false
+    impersonating_route: jat_frontend_home
 
     class:
         user:   Application\Sonata\UserBundle\Entity\User
