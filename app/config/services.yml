@@ -1,6 +1,6 @@
 parameters:
     # acl
-    security.acl.permission.map.class: Sonata\AdminBundle\Security\Acl\Permission\AdminPermissionMap
+#    security.acl.permission.map.class: Sonata\AdminBundle\Security\Acl\Permission\AdminPermissionMap
 
     sonata.user.admin.user.class: Application\Sonata\UserBundle\Admin\Model\UserAdmin
 

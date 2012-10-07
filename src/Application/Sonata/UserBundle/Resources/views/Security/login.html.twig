@@ -8,11 +8,35 @@
 
 {% block article %}
 
-    {% if is_granted('ROLE_ADMIN') %}
-        {% include "ApplicationSonataUserBundle:Security:auth.html.twig" with {'role':'admin'} %}
+    {% if is_granted('ROLE_SUPER_ADMIN') %}
+        {% include "ApplicationSonataUserBundle:Security:auth.html.twig"
+            with {'group':'gods', 'app': app } %}
+        {% set mark = true %}
+
+    {% elseif is_granted('ROLE_SONATA_USER_ADMIN_GROUP_MASTER') %}
+        {% include "ApplicationSonataUserBundle:Security:auth.html.twig"
+            with {'group':'admins', 'app': app } %}
+        {% set mark = true %}
+
+    {% elseif is_granted('ROLE_SONATA_USER_ADMIN_GROUP_OPERATOR') %}
+        {% include "ApplicationSonataUserBundle:Security:auth.html.twig"
+            with {'group':'editors', 'app': app } %}
+        {% set mark = true %}
+
+    {% elseif is_granted('ROLE_SONATA_USER_ADMIN_GROUP_CREATE') %}
+        {% include "ApplicationSonataUserBundle:Security:auth.html.twig"
+            with {'group':'staff', 'app': app } %}
+        {% set mark = true %}
+
+    {% elseif is_granted('ROLE_SONATA_USER_ADMIN_GROUP_VIEW') %}
+        {% include "ApplicationSonataUserBundle:Security:auth.html.twig"
+            with {'group':'guests', 'app': app } %}
+        {% set mark = true %}
 
     {% elseif is_granted('ROLE_USER') %}
-        {% include "ApplicationSonataUserBundle:Security:auth.html.twig" with {'role':'user'} %}
+        {% include "ApplicationSonataUserBundle:Security:auth.html.twig"
+            with {'group':'users', 'app': app } %}
+        {% set mark = true %}
 
     {% else %}
         <div class="page-header">
