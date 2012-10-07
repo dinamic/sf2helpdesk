@@ -1,4 +1,4 @@
-Julio Antúnez Tarín (23):
+Julio Antúnez Tarín (29):
       - First sending.
       - Adding database by environment.
       - Added Doctrine Fixtures bundle.
@@ -22,4 +22,10 @@ Julio Antúnez Tarín (23):
       - Refactorized FOSUserBundle register domain logic.
       - Refactorized login via FOSUserBundle.     - Refactorized register via FOSUserBundle.
       - Merge branch 'feature-bundle-fosuser-refactoring' into develop
+      - Burned version to number 1.3.
+      - Merge branch 'release-1.3' into develop
+      - Added new icons to Twitter Bootstrap frontend theme.
+      - Merge branch 'feature-frontend-theme-update' into develop
+      - Added Doctrine fixtures for Users and Groups.     - Changed security strategy to role after performance issues with ACL.
+      - Merge branch 'feature-fixtures' into develop
 
