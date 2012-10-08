@@ -1,3 +1,30 @@
+commit d9517e623f17925542f141f471b18bada707e4ae
+Merge: 4151a5a 5d2bb0a
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Mon Oct 8 02:41:08 2012 +0200
+
+    - Merge branch 'feature-clean-frontend-home' into develop
+
+commit 5d2bb0aaac78bd9ede0eff39a8c306bfbb8c1533
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Mon Oct 8 02:35:18 2012 +0200
+
+    - Refactorized frontend theme.
+    - Refactoried admin theme.
+
+commit 4151a5a7fd0b3968dba4b77a314a6557670e85ff
+Merge: 6a50622 0b28f81
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Sun Oct 7 05:36:00 2012 +0200
+
+    - Merge branch 'release-1.4.1' into develop
+
+commit 0b28f8172905f61f778cd7242f18a46b4d1fa82b
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Sun Oct 7 05:35:18 2012 +0200
+
+     Bumped version to number 1.4.1.
+
 commit 6a506225e6e97d62b4d75d15186902fb13636fb2
 Merge: f25c6b8 cfe97fd
 Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
