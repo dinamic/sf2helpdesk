@@ -20,6 +20,7 @@ monolog:
             level: info
 
 assetic:
+    debug: false
     use_controller: true
 
 #swiftmailer:

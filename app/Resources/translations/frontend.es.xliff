@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
-  <file date="2012-10-06T20:08:46Z" source-language="en" target-language="es" datatype="plaintext" original="not.available">
+  <file date="2012-10-08T01:23:24Z" source-language="en" target-language="es" datatype="plaintext" original="not.available">
     <header>
       <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
       <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
@@ -10,25 +10,40 @@
         <jms:reference-file line="45">Resources/views/base.html.twig
                 </jms:reference-file>
         <source>English</source>
-        <target>Inglés</target>
+        <target>EN</target>
       </trans-unit>
       <trans-unit id="44389f6a466eaabf5c1db729e369511134e2b03b" resname="French">
         <jms:reference-file line="45">Resources/views/base.html.twig
                 </jms:reference-file>
         <source>French</source>
-        <target>Francés</target>
+        <target>FR</target>
       </trans-unit>
       <trans-unit id="da91388c72d3e31da19dcd85c97374197748485d" resname="German">
         <jms:reference-file line="45">Resources/views/base.html.twig
                 </jms:reference-file>
         <source>German</source>
-        <target>Alemán</target>
+        <target>DE</target>
       </trans-unit>
       <trans-unit id="8df7f1b361b2af42d36011e00d22c0f9891ec0b0" resname="Spanish">
         <jms:reference-file line="45">Resources/views/base.html.twig
                 </jms:reference-file>
         <source>Spanish</source>
-        <target>Español</target>
+        <target>ES</target>
+      </trans-unit>
+      <trans-unit id="fca31f88a927e8d81243971b9a9020688fe71fe1" resname="frontend.aboutus.header">
+        <jms:reference-file line="35">Resources/views/layout.html.twig</jms:reference-file>
+        <source>frontend.aboutus.header</source>
+        <target>Acerca de nosotros</target>
+      </trans-unit>
+      <trans-unit id="4be3dc8e7380cb5e860bf58a91272f2ce76ab4ea" resname="frontend.aboutus.text.intro">
+        <jms:reference-file line="36">Resources/views/layout.html.twig</jms:reference-file>
+        <source>frontend.aboutus.text.intro</source>
+        <target>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</target>
+      </trans-unit>
+      <trans-unit id="a454bff0b0e1e932ac00dbf6178fa79f74f786dd" resname="frontend.aboutus.text.slogan">
+        <jms:reference-file line="37">Resources/views/layout.html.twig</jms:reference-file>
+        <source>frontend.aboutus.text.slogan</source>
+        <target>El objetivo inicial consiste en la creación de una aplicación, no un bundle.</target>
       </trans-unit>
       <trans-unit id="a6081aee6cfd3c3ab820c6db831304144d97bb54" resname="frontend.author">
         <jms:reference-file line="9">Resources/views/base.html.twig</jms:reference-file>
@@ -36,27 +51,40 @@
         <target>Julio Antúnez Tarín</target>
       </trans-unit>
       <trans-unit id="43f8a4cfd0f7bd316de37a8f691e30fe4f50da38" resname="frontend.content.header">
-        <jms:reference-file line="35">Resources/views/base.html.twig</jms:reference-file>
+        <jms:reference-file line="36">Resources/views/base.html.twig</jms:reference-file>
         <jms:reference-file line="5">views/Default/home.html.twig</jms:reference-file>
-        <jms:reference-file line="10">views/Default/home.html.twig</jms:reference-file>
         <source>frontend.content.header</source>
         <target>Portada</target>
       </trans-unit>
       <trans-unit id="db6644fdb7abeb7b2aacb1884086b49df1efe9d5" resname="frontend.title">
-        <jms:reference-file line="53">Resources/views/base.html.twig</jms:reference-file>
+        <jms:reference-file line="58">Resources/views/base.html.twig</jms:reference-file>
         <jms:reference-file line="9">Resources/views/base.html.twig</jms:reference-file>
-        <jms:reference-file line="30">Resources/views/base.html.twig</jms:reference-file>
-        <jms:reference-file line="25">Resources/views/layout.html.twig</jms:reference-file>
+        <jms:reference-file line="29">Resources/views/base.html.twig</jms:reference-file>
         <source>frontend.title</source>
         <target>SF2 Help Desk</target>
       </trans-unit>
+      <trans-unit id="b790dcecc7f8f53182a04ebeca8b0c8249271fb8" resname="frontend.title.slogan.button">
+        <jms:reference-file line="15">views/Default/home.html.twig</jms:reference-file>
+        <source>frontend.title.slogan.button</source>
+        <target>Ir al código fuente</target>
+      </trans-unit>
+      <trans-unit id="4b4121a64bdc9651b250041977efa1e254999976" resname="frontend.title.slogan.header">
+        <jms:reference-file line="11">views/Default/home.html.twig</jms:reference-file>
+        <source>frontend.title.slogan.header</source>
+        <target>Help Desk para Symfony 2</target>
+      </trans-unit>
+      <trans-unit id="e8e1be199bfe3ce2e5dac057ef5c65cc7bdec1da" resname="frontend.title.slogan.text">
+        <jms:reference-file line="12">views/Default/home.html.twig</jms:reference-file>
+        <source>frontend.title.slogan.text</source>
+        <target>Aplicación Help Desk con separación de roles, paneles de control personalizados y un montón de buenas características. El objetivo inicial consiste en la creación de una aplicación, no un bundle.</target>
+      </trans-unit>
       <trans-unit id="876b926a5d010b06e6bcdbedc9b1657c22f5f0fd" resname="frontend.user.area">
-        <jms:reference-file line="37">Resources/views/base.html.twig</jms:reference-file>
+        <jms:reference-file line="38">Resources/views/base.html.twig</jms:reference-file>
         <source>frontend.user.area</source>
         <target>Usuario</target>
       </trans-unit>
       <trans-unit id="84972b69d03a08a87a6250b168dfc4594c206a7d" resname="sonata.admin.header">
-        <jms:reference-file line="36">Resources/views/base.html.twig</jms:reference-file>
+        <jms:reference-file line="37">Resources/views/base.html.twig</jms:reference-file>
         <source>sonata.admin.header</source>
         <target>Admin</target>
       </trans-unit>

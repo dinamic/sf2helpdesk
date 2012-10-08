@@ -6,10 +6,22 @@
     {% endspaceless %}
 {% endblock %}
 
+{% block header %}
+    <header id="header" class="row-fluid">
+        <h2 class="">{{ 'frontend.title.slogan.header'|trans({}, "frontend") }}</h2>
+        <p class="lead">{{ 'frontend.title.slogan.text'|trans({}, "frontend") }}</p>
+        <p id="button-container">
+            <a class="btn btn-primary btn-large offset5">
+                <i class="icon-github"></i>  {{ 'frontend.title.slogan.button'|trans({}, "frontend") }}
+            </a>
+        </p>
+    </header>
+{% endblock header %}
+
 {% block article %}
-    <h1>{{ 'frontend.content.header'|trans({}, "frontend") }}</h1>
+
 {% endblock %}
 
 {% block aside %}
-    <p>Lorem ipsum dot equorum</p>
+
 {% endblock %}
