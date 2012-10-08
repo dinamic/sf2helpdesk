@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block article %}
-
+<article class="span8">
     {% if is_granted('ROLE_SUPER_ADMIN') %}
         {% include "ApplicationSonataUserBundle:Security:auth.html.twig"
             with {'group':'gods', 'app': app } %}
@@ -43,14 +43,13 @@
             <h1>{{ 'security.login.submit'|trans({}, "FOSUserBundle") }} <small>{{ 'security.login.subheader'|trans({}, "FOSUserBundle") }}</small></h1>
         </div>
 
-        <div class="row-fluid">
         {% block fos_user_content %}
             {% if error %}
                 {% set errorClass = 'error' %}
                 <div class="alert alert-error">
                     <button type="button" class="close" data-dismiss="alert">×</button>
                     {{ error|trans({}, 'FOSUserBundle') }}
-                </div>
+                </div><!--/.alert -->
             {% endif %}
 
             <form action="{{ path("fos_user_security_check") }}" method="post"
@@ -63,9 +62,9 @@
                             <input id="username" name="_username"
                                    size="16" type="text" placeholder="{{ 'security.login.username'|trans({}, 'FOSUserBundle') }}"
                                    required="required" value="{{ last_username }}">
-                        </div>
-                    </div>
-                </div>
+                        </div><!--/.input-prepend -->
+                    </div><!--/.controls -->
+                </div><!--/#control-group -->
 
                 <div class="control-group {{ errorClass|default('') }}">
                     <div class="controls">
@@ -74,9 +73,9 @@
                             <input id="password" name="_password"
                                    size="16" type="password"
                                    required="required" placeholder="{{ 'security.login.password'|trans({}, 'FOSUserBundle') }}" />
-                        </div>
-                    </div>
-                </div>
+                        </div><!--/.input-prepend -->
+                    </div><!--/.controls -->
+                </div><!--/#control-group -->
 
                 <div class="control-group">
                     <div class="controls">
@@ -84,8 +83,8 @@
                             {{ 'security.login.remember_me'|trans({}, 'FOSUserBundle') }}
                             <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
                         </label>
-                    </div>
-                </div>
+                    </div><!--/.controls -->
+                </div><!--/#control-group -->
 
                 <div class="form-actions">
                     <button id="_submit" name="_submit" type="submit" class="btn btn-primary">
@@ -94,11 +93,17 @@
                     <button id="_reset" name="_reset" type="reset" class="btn">
                         <i class="icon-refresh icon"></i> {{ 'security.login.reset'|trans({}, 'FOSUserBundle') }}
                     </button>
-                </div>
+                </div><!--/#control-group -->
 
                 <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
             </form>
         {% endblock fos_user_content %}
-        </div>
     {% endif %}
+</article>
 {% endblock article %}
+
+{% block aside %}
+<aside id="sidebar" class="span4">
+    {% include "ApplicationSonataUserBundle::authSidebar.html.twig" %}
+</aside>
+{% endblock %}

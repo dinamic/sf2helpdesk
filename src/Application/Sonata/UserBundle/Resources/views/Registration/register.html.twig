@@ -7,7 +7,15 @@
 {% endblock %}
 
 {% block article %}
+<article class="span8">
     {% block fos_user_content %}
         {% include "ApplicationSonataUserBundle:Registration:register_content.html.twig" %}
     {% endblock fos_user_content %}
+</article>
+{% endblock %}
+
+{% block aside %}
+<aside id="sidebar" class="span4">
+    {% include "ApplicationSonataUserBundle::authSidebar.html.twig" %}
+</aside>
 {% endblock %}
