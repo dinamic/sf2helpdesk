@@ -21,22 +21,22 @@
 {% endblock %}
 
 {% block body %}
-
-    <div class="row-fluid">
+    <div id="body-wrapper" class="row-fluid">
 
         {% block header %}{% endblock header %}
 
-        <article id="content" class="span8">
-            {% block article %}{% endblock %}
-        </article>
+        <div id="content-wrapper" class="row-fluid">
 
-        <aside id="sidebar" class="span4">
-            {% block aside %}
-                <h3>{{ 'frontend.aboutus.header'|trans({}, "frontend") }}</h3>
-                <p>{{ 'frontend.aboutus.text.intro'|trans({}, "frontend") }}</p>
-                <p class="lead muted">{{ 'frontend.aboutus.text.slogan'|trans({}, "frontend") }}</p>
-            {% endblock %}
-        </aside>
+            {# Full page #}
+            {% block section %}{% endblock %}
 
-    </div>
+            {# Page with sidebar #}
+            <div id="sidebar-page" class="row-fluid">
+                {% block article %}{% endblock %}
+                {% block aside %}{% endblock %}
+            </div><!--/#sidebar-page -->
+
+        </div><!--/#content-wrapper -->
+
+    </div><!--/#body-wrapper -->
 {% endblock body %}
