@@ -21,22 +21,22 @@
 {% endblock %}
 
 {% block body %}
-    <header class="well well-large">
-        <h1><a href="{{ path("jat_frontend_home") }}">{{ 'frontend.title'|trans({}, "frontend") }}</a></h1>
 
-        <nav>
-            <ul class="nav nav-pills">
-                <li class="active"><a href="{{ path('sonata_user_admin_security_login') }}">{{ 'security.login.submit'|trans({}, "FOSUserBundle") }}</a></li>
-                <li><a href="{{ path('fos_user_registration_register') }}">{{ 'registration.register'|trans({}, "FOSUserBundle") }}</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="row-fluid">
 
-    <article id="content">
-        {% block article %}{% endblock %}
-    </article>
+        {% block header %}{% endblock header %}
 
-    <aside>
-        {% block aside %}{% endblock %}
-    </aside>
-{% endblock %}
+        <article id="content" class="span8">
+            {% block article %}{% endblock %}
+        </article>
+
+        <aside id="sidebar" class="span4">
+            {% block aside %}
+                <h3>{{ 'frontend.aboutus.header'|trans({}, "frontend") }}</h3>
+                <p>{{ 'frontend.aboutus.text.intro'|trans({}, "frontend") }}</p>
+                <p class="lead muted">{{ 'frontend.aboutus.text.slogan'|trans({}, "frontend") }}</p>
+            {% endblock %}
+        </aside>
+
+    </div>
+{% endblock body %}

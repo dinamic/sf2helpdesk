@@ -4,8 +4,37 @@
 
 #top {
 
-  .auth-login {
-    padding-top:      0.8em;
-    display:          inline-block;
+  #top-content {
+
+    #top-menu {
+      .pull-left;
+    }
+
+    #top-icons {
+      .pull-right;
+
+      #top-login {
+        .pull-left;
+        margin-top: 0;
+
+        #top-logout {
+          margin-right: 5px;
+        }
+      }
+
+      #top-lang {
+        .pull-right;
+        margin-top: 0;
+        a {
+          font-size: 12px;
+          padding-left: 12px;
+          padding-right: 12px;
+        }
+
+        .dropdown-menu {
+          min-width: 20px;
+        }
+      }
+    }
   }
 }

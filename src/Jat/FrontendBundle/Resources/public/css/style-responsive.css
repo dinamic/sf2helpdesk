@@ -780,6 +780,36 @@
   #wrapper {
     padding-top: 0;
   }
+  #top-menu {
+    width: 100%;
+  }
+  #top-icons {
+    float: left;
+    width: 100%;
+  }
+  #top-icons #top-login {
+    display: inline-block;
+    width: 100%;
+  }
+  #top-icons #top-lang {
+    display: inline-block;
+    width: 100%;
+  }
+  #top-icons #top-lang button[data-toggle="dropdown"] {
+    display: none;
+  }
+  #top-icons #top-lang button {
+    margin-top: 1.85em;
+  }
+  #top-icons #top-lang ul {
+    position: absolute;
+    display: inline-block;
+    margin: 1em 15px;
+    list-style: none;
+  }
+  #top-icons #top-lang ul li {
+    display: inline-block;
+  }
 }
 
 @media (max-width: 767px) {
@@ -874,6 +904,39 @@
   #wrapper {
     padding-top: 0;
   }
+  #top .container-fluid {
+    padding-left: 20px;
+  }
+  #top-menu {
+    width: 100%;
+  }
+  #top-icons {
+    float: left;
+    width: 100%;
+  }
+  #top-icons #top-login {
+    display: inline-block;
+    width: 100%;
+  }
+  #top-icons #top-lang {
+    display: inline-block;
+    width: 100%;
+  }
+  #top-icons #top-lang button[data-toggle="dropdown"] {
+    display: none;
+  }
+  #top-icons #top-lang button {
+    margin-top: 1.85em;
+  }
+  #top-icons #top-lang ul {
+    position: absolute;
+    display: inline-block;
+    margin: 1em 15px;
+    list-style: none;
+  }
+  #top-icons #top-lang ul li {
+    display: inline-block;
+  }
 }
 
 @media (max-width: 480px) {
@@ -918,6 +981,39 @@
   }
   #wrapper {
     padding-top: 0;
+  }
+  #top .container-fluid {
+    padding-left: 20px;
+  }
+  #top-menu {
+    width: 100%;
+  }
+  #top-icons {
+    float: left;
+    width: 100%;
+  }
+  #top-icons #top-login {
+    display: inline-block;
+    width: 100%;
+  }
+  #top-icons #top-lang {
+    display: inline-block;
+    width: 100%;
+  }
+  #top-icons #top-lang button[data-toggle="dropdown"] {
+    display: none;
+  }
+  #top-icons #top-lang button {
+    margin-top: 1.85em;
+  }
+  #top-icons #top-lang ul {
+    position: absolute;
+    display: inline-block;
+    margin: 1em 15px;
+    list-style: none;
+  }
+  #top-icons #top-lang ul li {
+    display: inline-block;
   }
 }
 

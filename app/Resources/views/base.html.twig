@@ -26,23 +26,24 @@
                     <span class="icon-bar"></span>
                 </a>
 
-                <a class="brand" href="{{ path("jat_frontend_home") }}">
-                    {{ 'frontend.title'|trans({}, "frontend") }}
-                </a>
+                <a class="brand" href="{{ path("jat_frontend_home") }}">{{ 'frontend.title'|trans({}, "frontend") }}</a>
 
                 <div class="nav-collapse collapse">
-                    <div class="pull-right">
-                        <ul class="nav pull-left">
-                            <li><a href="{{ path('jat_frontend_home') }}">{{ 'frontend.content.header'|trans({}, "frontend") }}</a></li>
-                            <li class="active"><a href="{{ path('sonata_user_admin_security_login') }}">{{ 'sonata.admin.header'|trans({}, "frontend") }}</a></li>
-                            <li><a href="{{ path('jat_frontend_home') }}">{{ 'frontend.user.area'|trans({}, "frontend") }}</a></li>
-                            <li>{% include "ApplicationSonataUserBundle:Security:authCheck.html.twig" %}</li>
-                        </ul>
-                        {# Language switcher #}
-                        <div class="pull-right">
-                            {%  include "::language_switcher.html.twig" with { 'app': app, 'locales': locales} %}
-                        </div>
-                    </div>
+                    <div id="top-content">
+                        <div id="top-menu">
+                            <ul class="nav">
+                                <li class="active">
+                                    <a href="{{ path('jat_frontend_home') }}">{{ 'frontend.content.header'|trans({}, "frontend") }}</a>
+                                </li>
+                            </ul>
+                        </div><!--/#top-menu -->
+                        <div id="top-icons" class="btn-toolbar">
+                            {# Login types #}
+                            {% include "ApplicationSonataUserBundle:Security:authCheck.html.twig" %}
+                            {# Language switcher #}
+                            {% include "::language_switcher.html.twig" with { 'app': app, 'locales': locales} %}
+                        </div><!--/#top-icons -->
+                    </div><!--/#top-content -->
                 </div><!--/.nav-collapse -->
             </div>
         </div>
