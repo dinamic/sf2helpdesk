@@ -1,3 +1,29 @@
+commit 48e828f6f5fede647134e9b807470cb9f272a5bb
+Merge: 4214ec9 39ee18c
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Mon Oct 8 16:06:35 2012 +0200
+
+    - Merge branch 'feature-fosuser-production-assets' into develop
+
+commit 39ee18c9349f86ede0c99192df364a2b4b74ef88
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Mon Oct 8 16:05:59 2012 +0200
+
+    - Added production CSS assets.
+
+commit 4214ec9736cba7e01b90a936b402707a75af33a9
+Merge: d9517e6 2084187
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Mon Oct 8 02:43:18 2012 +0200
+
+    - Merge branch 'release-1.5' into develop
+
+commit 208418750fd52aa4d73cc147aa0ee4e67244aceb
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Mon Oct 8 02:42:21 2012 +0200
+
+    - Bumped version to number 1.5.
+
 commit d9517e623f17925542f141f471b18bada707e4ae
 Merge: 4151a5a 5d2bb0a
 Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
