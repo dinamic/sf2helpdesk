@@ -7,21 +7,68 @@
 {% endblock %}
 
 {% block header %}
-    <header id="header" class="row-fluid">
-        <h2 class="">{{ 'frontend.title.slogan.header'|trans({}, "frontend") }}</h2>
-        <p class="lead">{{ 'frontend.title.slogan.text'|trans({}, "frontend") }}</p>
-        <p id="button-container">
-            <a class="btn btn-primary btn-large offset5">
-                <i class="icon-github"></i>  {{ 'frontend.title.slogan.button'|trans({}, "frontend") }}
-            </a>
-        </p>
-    </header>
+<header id="header" class="row-fluid">
+    <h2>{{ 'frontend.title.slogan.header'|trans({}, "frontend") }}</h2>
+    <p class="lead">{{ 'frontend.title.slogan.text'|trans({}, "frontend") }}</p>
+    <p id="button-container">
+        <a class="btn btn-primary btn-large offset5">
+            <i class="icon-github"></i>  {{ 'frontend.title.slogan.button'|trans({}, "frontend") }}
+        </a>
+    </p>
+</header>
 {% endblock header %}
 
-{% block article %}
+{% block section %}
+<section id="content" class="span12">
+    <ul class="thumbnails">
+        <li class="span3">
+            <div class="thumbnail">
+                <img src="{{ asset('bundles/jatfrontend/img/pages/user/faq.png') }}" />
+                <h4>FAQ</h4>
+                <p class="muted">Thumbnail caption...</p>
+            </div>
+        </li>
+        <li class="span3">
+            <div class="thumbnail">
+                <img src="{{ asset('bundles/jatfrontend/img/pages/user/dashboard.png') }}" />
+                <h4>User dashboard</h4>
+                <p class="muted">Thumbnail caption...</p>
+            </div>
+        </li>
+        <li class="span3">
+            <div class="thumbnail">
+                <img src="{{ asset('bundles/jatfrontend/img/pages/user/search-results.png') }}" />
+                <h4>Search results</h4>
+                <p class="muted">Thumbnail caption...</p>
+            </div>
+        </li>
+        <li class="span3">
+            <div class="thumbnail">
+                <img src="{{ asset('bundles/jatfrontend/img/pages/user/new-ticket.png') }}" />
+                <h4>New Ticket</h4>
+                <p class="muted">Thumbnail caption...</p>
+            </div>
+        </li>
+    </ul>
+</section>
+{% endblock section %}
 
-{% endblock %}
+{% block article %}
+<article class="span8">
+    <h3>Features</h3>
+    <ul>
+        <li>Tickets</li>
+        <li>Roles separation</li>
+    </ul>
+</article>
+{% endblock article %}
 
 {% block aside %}
-
-{% endblock %}
+<aside id="sidebar" class="span4">
+    <h3>Roadmap</h3>
+    <ul>
+        <li>Version 1.5</li>
+        <li>Version 2</li>
+    </ul>
+</aside>
+{% endblock aside %}
