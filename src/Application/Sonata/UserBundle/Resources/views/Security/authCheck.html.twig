@@ -1,41 +1,49 @@
-{% if is_granted('ROLE_SUPER_ADMIN') %}
-    {% include "ApplicationSonataUserBundle:Security:auth.html.twig"
-        with {'group':'gods', 'app': app } %}
-    {% set mark = true %}
+<div id="top-login" class="btn-group">
+    {% if is_granted('ROLE_SUPER_ADMIN') %}
+        {% include "ApplicationSonataUserBundle:Security:auth.html.twig"
+            with {'group':'gods', 'app': app } %}
+        {% set mark = true %}
 
-{% elseif is_granted('ROLE_SONATA_USER_ADMIN_GROUP_MASTER') %}
-    {% include "ApplicationSonataUserBundle:Security:auth.html.twig"
-        with {'group':'admins', 'app': app } %}
-    {% set mark = true %}
+    {% elseif is_granted('ROLE_SONATA_USER_ADMIN_GROUP_MASTER') %}
+        {% include "ApplicationSonataUserBundle:Security:auth.html.twig"
+            with {'group':'admins', 'app': app } %}
+        {% set mark = true %}
 
-{% elseif is_granted('ROLE_SONATA_USER_ADMIN_GROUP_OPERATOR') %}
-    {% include "ApplicationSonataUserBundle:Security:auth.html.twig"
-        with {'group':'editors', 'app': app } %}
-    {% set mark = true %}
+    {% elseif is_granted('ROLE_SONATA_USER_ADMIN_GROUP_OPERATOR') %}
+        {% include "ApplicationSonataUserBundle:Security:auth.html.twig"
+            with {'group':'editors', 'app': app } %}
+        {% set mark = true %}
 
-{% elseif is_granted('ROLE_SONATA_USER_ADMIN_GROUP_CREATE') %}
-    {% include "ApplicationSonataUserBundle:Security:auth.html.twig"
-        with {'group':'staff', 'app': app } %}
-    {% set mark = true %}
+    {% elseif is_granted('ROLE_SONATA_USER_ADMIN_GROUP_CREATE') %}
+        {% include "ApplicationSonataUserBundle:Security:auth.html.twig"
+            with {'group':'staff', 'app': app } %}
+        {% set mark = true %}
 
-{% elseif is_granted('ROLE_SONATA_USER_ADMIN_GROUP_VIEW') %}
-    {% include "ApplicationSonataUserBundle:Security:auth.html.twig"
-        with {'group':'guests', 'app': app } %}
-    {% set mark = true %}
+    {% elseif is_granted('ROLE_SONATA_USER_ADMIN_GROUP_VIEW') %}
+        {% include "ApplicationSonataUserBundle:Security:auth.html.twig"
+            with {'group':'guests', 'app': app } %}
+        {% set mark = true %}
 
-{% elseif is_granted('ROLE_USER') %}
-    {% include "ApplicationSonataUserBundle:Security:auth.html.twig"
-        with {'group':'users', 'app': app } %}
-    {% set mark = true %}
+    {% elseif is_granted('ROLE_USER') %}
+        {% include "ApplicationSonataUserBundle:Security:auth.html.twig"
+            with {'group':'users', 'app': app } %}
+        {% set mark = true %}
 
-{% else %}
-    <a href="{{ path('fos_user_security_login') }}">
-        <i class="icon-lock icon-white"></i>
-    </a>
-{% endif %}
+    {% else %}
+        <a href="{{ path('fos_user_security_login') }}"
+           class="btn btn-mini btn-inverse"><i class="icon-user"></i>
+        </a>
+        <a href="{{ path('sonata_user_admin_security_login') }}"
+           class="btn btn-mini btn-inverse"><i class="icon-lock"></i>
+        </a>
+        <a href="{{ path('fos_user_registration_register') }}"
+           class="btn btn-mini btn-inverse"><i class="icon-heart"></i>
+        </a>
+    {% endif %}
 
-{% if mark is defined %}
-    <a class="auth-login" href="{{ path('fos_user_security_logout') }}">
-        <i class="icon-off icon-white"></i>
-    </a>
-{% endif %}
+    {% if mark is defined %}
+        <a id="top-logout" href="{{ path('fos_user_security_logout') }}"
+           class="btn btn-mini btn-inverse"><i class="icon-off"></i>
+        </a>
+    {% endif %}
+</div><!-- #top-login -->

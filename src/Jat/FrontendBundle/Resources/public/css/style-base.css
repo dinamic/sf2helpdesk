@@ -6126,21 +6126,54 @@ body {
   background: #ffffff;
 }
 
-#top .auth-login {
-  display: inline-block;
-  padding-top: 0.8em;
+#top #top-content #top-menu {
+  float: left;
 }
 
-#header {
-  margin-bottom: 1em;
+#top #top-content #top-icons {
+  float: right;
 }
 
-#header #logo h1 {
+#top #top-content #top-icons #top-login {
+  float: left;
   margin-top: 0;
 }
 
-#header #search-form {
-  padding-top: 0.5em;
+#top #top-content #top-icons #top-login #top-logout {
+  margin-right: 5px;
+}
+
+#top #top-content #top-icons #top-lang {
+  float: right;
+  margin-top: 0;
+}
+
+#top #top-content #top-icons #top-lang a {
+  padding-right: 12px;
+  padding-left: 12px;
+  font-size: 12px;
+}
+
+#top #top-content #top-icons #top-lang .dropdown-menu {
+  min-width: 20px;
+}
+
+#header {
+  margin-bottom: 3em;
+}
+
+#header h2 {
+  font-size: 4em;
+  line-height: 1;
+  text-align: center;
+}
+
+#header .lead {
+  text-align: center;
+}
+
+#header #button-container {
+  margin: 2em 0 1em;
 }
 
 #info {

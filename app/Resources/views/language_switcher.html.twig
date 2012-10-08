@@ -1,6 +1,6 @@
-<div class="btn-group span1 pull-right">
-    <button class="btn btn-mini"><i class="icon-flag"></i></button>
-    <button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
+<div id="top-lang" class="btn-group">
+    <button class="btn btn-mini btn-inverse"><i class="icon-flag"></i></button>
+    <button class="btn btn-mini btn-inverse dropdown-toggle" data-toggle="dropdown">
         <span class="caret"></span>
     </button>
     <ul class="dropdown-menu">
@@ -8,4 +8,4 @@
             <li><a href="{{ path(app.request.attributes.get("_route"), app.request.attributes.get('_route_params')|merge({"_locale": locale})) }}">{{ lang|capitalize|trans({}, "frontend") }}</a></li>
         {% endfor %}
     </ul>
-</div>
+</div><!--/#top-lang -->
