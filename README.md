@@ -7,17 +7,17 @@
    
 # User zone
    
-- [Home](app/Resources/images/wireframes/home.png)   
-- [Dashboard](app/Resources/images/wireframes/dashboard.png)   
-- [Chat](app/Resources/images/wireframes/chat.png)   
-- [FAQ](app/Resources/images/wireframes/faq.png)   
-- [New tag](app/Resources/images/wireframes/new-tag.png)   
-- [New ticket](app/Resources/images/wireframes/new-ticket.png)   
-- [Profile](app/Resources/images/wireframes/profile.png)   
-- [Search results](app/Resources/images/wireframes/search-results.png)   
-- [Blog](app/Resources/images/wireframes/blog.png)   
-- [Blog article](app/Resources/images/wireframes/blog-article.png)   
-- [Blog historial](app/Resources/images/wireframes/blog-historial.png)   
+- [Home](/jatap/sf2helpdesk/blob/master/app/Resources/images/wireframes/dashboard.png)   
+- [Dashboard](/jatap/sf2helpdesk/blob/master/app/Resources/images/wireframes/dashboard.png)   
+- [Chat](/jatap/sf2helpdesk/blob/master/app/Resources/images/wireframes/chat.png)   
+- [FAQ](/jatap/sf2helpdesk/blob/master/app/Resources/images/wireframes/faq.png)   
+- [New tag](/jatap/sf2helpdesk/blob/master/app/Resources/images/wireframes/new-tag.png)   
+- [New ticket](/jatap/sf2helpdesk/blob/master/app/Resources/images/wireframes/new-ticket.png)   
+- [Profile](/jatap/sf2helpdesk/blob/master/app/Resources/images/wireframes/profile.png)   
+- [Search results](/jatap/sf2helpdesk/blob/master/app/Resources/images/wireframes/search-results.png)   
+- [Blog](/jatap/sf2helpdesk/blob/master/app/Resources/images/wireframes/blog.png)   
+- [Blog article](/jatap/sf2helpdesk/blob/master/app/Resources/images/wireframes/blog-article.png)   
+- [Blog historial](/jatap/sf2helpdesk/blob/master/app/Resources/images/wireframes/blog-historial.png)   
    
 
 # Staff zone
