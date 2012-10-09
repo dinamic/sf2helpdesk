@@ -7,17 +7,17 @@
    
 # User zone
    
-- [Home](app/Resources/images/home.png)   
-- [Dashboard](app/Resources/images/dashboard.png)   
-- [Chat](app/Resources/images/chat.png)   
-- [FAQ](app/Resources/images/faq.png)   
-- [New tag](app/Resources/images/new-tag.png)   
-- [New ticket](app/Resources/images/new-ticket.png)   
-- [Profile](app/Resources/images/profile.png)   
-- [Search results](app/Resources/images/search-results.png)   
-- [Blog](app/Resources/images/blog.png)   
-- [Blog article](app/Resources/images/blog-article.png)   
-- [Blog historial](app/Resources/images/blog-historial.png)   
+- [Home](master/app/Resources/images/home.png)   
+- [Dashboard](master/app/Resources/images/dashboard.png)   
+- [Chat](master/app/Resources/images/chat.png)   
+- [FAQ](master/app/Resources/images/faq.png)   
+- [New tag](master/app/Resources/images/new-tag.png)   
+- [New ticket](master/app/Resources/images/new-ticket.png)   
+- [Profile](master/app/Resources/images/profile.png)   
+- [Search results](master/app/Resources/images/search-results.png)   
+- [Blog](master/app/Resources/images/blog.png)   
+- [Blog article](master/app/Resources/images/blog-article.png)   
+- [Blog historial](master/app/Resources/images/blog-historial.png)   
    
 
 # Staff zone
