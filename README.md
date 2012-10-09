@@ -7,17 +7,17 @@
    
 # User zone
    
-- [Home](master/app/Resources/images/home.png)   
-- [Dashboard](master/app/Resources/images/dashboard.png)   
-- [Chat](master/app/Resources/images/chat.png)   
-- [FAQ](master/app/Resources/images/faq.png)   
-- [New tag](master/app/Resources/images/new-tag.png)   
-- [New ticket](master/app/Resources/images/new-ticket.png)   
-- [Profile](master/app/Resources/images/profile.png)   
-- [Search results](master/app/Resources/images/search-results.png)   
-- [Blog](master/app/Resources/images/blog.png)   
-- [Blog article](master/app/Resources/images/blog-article.png)   
-- [Blog historial](master/app/Resources/images/blog-historial.png)   
+- [Home](app/Resources/images/wireframes/home.png)   
+- [Dashboard](app/Resources/images/wireframes/dashboard.png)   
+- [Chat](app/Resources/images/wireframes/chat.png)   
+- [FAQ](app/Resources/images/wireframes/faq.png)   
+- [New tag](app/Resources/images/wireframes/new-tag.png)   
+- [New ticket](app/Resources/images/wireframes/new-ticket.png)   
+- [Profile](app/Resources/images/wireframes/profile.png)   
+- [Search results](app/Resources/images/wireframes/search-results.png)   
+- [Blog](app/Resources/images/wireframes/blog.png)   
+- [Blog article](app/Resources/images/wireframes/blog-article.png)   
+- [Blog historial](app/Resources/images/wireframes/blog-historial.png)   
    
 
 # Staff zone
