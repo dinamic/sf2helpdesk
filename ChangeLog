@@ -1,21 +1,21 @@
-commit f95e7e14e50e6f8078a4000adfe0d555550d4480
+commit 078f9a17415398e27f9cec6583e60524d33d59fa
+Merge: 9081e72 9822c69
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Tue Oct 9 02:34:28 2012 +0200
+
+    - Merge branch 'feature-frontend-wireframes' into develop
+
+commit 9822c69ae3fb150f2eeb6821e25fe17e746112a0
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Tue Oct 9 02:33:46 2012 +0200
+
+    - Updated README.md.
+
+commit 9081e72f6a43b1ca8e4215fe2213fc93fc5f758a
 Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
-Date:   Tue Oct 9 03:26:33 2012 +0300
+Date:   Tue Oct 9 03:26:56 2012 +0300
 
     Update README.md
-
-commit e241e77486feb88ff28445ccbeed77f2cbe8b536
-Merge: 2ab623e 8757343
-Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
-Date:   Tue Oct 9 02:21:49 2012 +0200
-
-    - Merge branch 'release-1.6.1'
-
-commit 875734383a3e2a61e94b9fdfb67631b0bc0e4b53
-Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
-Date:   Tue Oct 9 02:21:39 2012 +0200
-
-    - Bumped version to number 1.6.1.
 
 commit 23dbe4cd82a25bf81ab2a785d0a793d0778fd2de
 Merge: d420bec a957dc3
@@ -42,13 +42,6 @@ Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
 Date:   Tue Oct 9 01:42:29 2012 +0200
 
     - Merge branch 'release-1.6' into develop
-
-commit 2ab623e6fe7e318d93efadbf7122ac18f58cf6ce
-Merge: 14b66f9 ed6a943
-Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
-Date:   Tue Oct 9 01:42:15 2012 +0200
-
-    - Merge branch 'release-1.6'
 
 commit ed6a9432ed94d49cc92c8e48e08cfbac7dcbe477
 Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
@@ -77,13 +70,6 @@ Date:   Mon Oct 8 16:08:02 2012 +0200
 
     - Merge branch 'release-1.5.1' into develop
 
-commit 14b66f9089ac135bc3996ea6c7431d414b482700
-Merge: baf360d b07cdbe
-Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
-Date:   Mon Oct 8 16:07:45 2012 +0200
-
-    - Merge branch 'release-1.5.1'
-
 commit b07cdbe7abd1b930f74870475d509eb72b314422
 Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
 Date:   Mon Oct 8 16:07:31 2012 +0200
@@ -109,13 +95,6 @@ Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
 Date:   Mon Oct 8 02:43:18 2012 +0200
 
     - Merge branch 'release-1.5' into develop
-
-commit baf360d075b368dbeb30e95304c84666572b5006
-Merge: 37cc14d 2084187
-Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
-Date:   Mon Oct 8 02:42:45 2012 +0200
-
-    - Merge branch 'release-1.5'
 
 commit 208418750fd52aa4d73cc147aa0ee4e67244aceb
 Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
@@ -144,13 +123,6 @@ Date:   Sun Oct 7 05:36:00 2012 +0200
 
     - Merge branch 'release-1.4.1' into develop
 
-commit 37cc14d1281703b0e5b86a167373d46f90d2a83a
-Merge: 735d181 0b28f81
-Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
-Date:   Sun Oct 7 05:35:27 2012 +0200
-
-    - Merge branch 'release-1.4.1'
-
 commit 0b28f8172905f61f778cd7242f18a46b4d1fa82b
 Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
 Date:   Sun Oct 7 05:35:18 2012 +0200
@@ -176,13 +148,6 @@ Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
 Date:   Sun Oct 7 05:23:28 2012 +0200
 
     - Merge branch 'release-1.4' into develop
-
-commit 735d181fcbad8f1874c06a89a8dd9168bb450134
-Merge: 5ee40be 28aa036
-Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
-Date:   Sun Oct 7 05:23:05 2012 +0200
-
-    - Merge branch 'release-1.4'
 
 commit 28aa03653f3f9cf6f625daa81ad9bf763252fb7d
 Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
@@ -224,13 +189,6 @@ Date:   Sat Oct 6 20:52:17 2012 +0200
 
     - Merge branch 'release-1.3' into develop
 
-commit 5ee40bec82fa131cbe8e2aef229d68107aba2ffe
-Merge: 662529c 83e46c1
-Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
-Date:   Sat Oct 6 20:51:46 2012 +0200
-
-    - Merge branch 'release-1.3'
-
 commit 83e46c1a0361eae13e8990fc6cbbe0b9a6c63cd9
 Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
 Date:   Sat Oct 6 20:51:38 2012 +0200
@@ -263,13 +221,6 @@ Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
 Date:   Fri Oct 5 00:47:36 2012 +0200
 
     - Merge branch 'release-1.2' into develop
-
-commit 662529c642ff7326d682f31c8657e827ca7c3b57
-Merge: f0754ef 5b9efd7
-Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
-Date:   Fri Oct 5 00:47:05 2012 +0200
-
-    - Merge branch 'release-1.2'
 
 commit 5b9efd72a6c974495b32ba9ac3317ddf833306aa
 Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
@@ -314,13 +265,6 @@ Date:   Thu Oct 4 04:43:30 2012 +0200
 
     - Merge branch 'release-1.1' into develop
 
-commit f0754ef0f72ebdd25fb0a8eeae0efa1e335c24cd
-Merge: f55b8d0 3e56662
-Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
-Date:   Thu Oct 4 04:43:11 2012 +0200
-
-    - Merge branch 'release-1.1'
-
 commit 3e56662833aab99cdad7bf3e9243eefd9d535e59
 Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
 Date:   Thu Oct 4 04:43:00 2012 +0200
@@ -360,13 +304,6 @@ Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
 Date:   Wed Oct 3 19:58:12 2012 +0200
 
     - Merge branch 'release-1.0' into develop
-
-commit f55b8d027da116fd4145e43128317d95eb4daa29
-Merge: 88587d9 065ef86
-Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
-Date:   Wed Oct 3 19:57:40 2012 +0200
-
-    - Merge branch 'release-1.0'
 
 commit 065ef866d4b3420b13b92e5667c12d3e34197900
 Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
