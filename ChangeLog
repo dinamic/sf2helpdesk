@@ -1,3 +1,35 @@
+commit 23dbe4cd82a25bf81ab2a785d0a793d0778fd2de
+Merge: d420bec a957dc3
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Tue Oct 9 02:20:08 2012 +0200
+
+    - Merge branch 'feature-frontend-wireframes' into develop
+
+commit a957dc360ed42dc54494faf11a6e90586ec36c70
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Tue Oct 9 02:19:16 2012 +0200
+
+    - Fixed README.md image paths.
+
+commit df9d67adaa514a3096a0f45f1ea5f36167b9affc
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Tue Oct 9 02:16:44 2012 +0200
+
+    - Added some wireframes.
+
+commit d420bec61e9c873783b3d36d3911e25ae6acf3b5
+Merge: 4483a0f ed6a943
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Tue Oct 9 01:42:29 2012 +0200
+
+    - Merge branch 'release-1.6' into develop
+
+commit ed6a9432ed94d49cc92c8e48e08cfbac7dcbe477
+Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
+Date:   Tue Oct 9 01:42:04 2012 +0200
+
+    - Bumped version to number 1.6.
+
 commit 4483a0fef7727bd4c6fd62057a6512507334f7e3
 Merge: 8aac107 2e4e244
 Author: Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>
