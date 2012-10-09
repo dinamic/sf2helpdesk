@@ -1,4 +1,4 @@
-Julio Antúnez Tarín (50):
+Julio Antúnez Tarín (61):
       - First sending.
       - Adding database by environment.
       - Added Doctrine Fixtures bundle.
@@ -6,47 +6,61 @@ Julio Antúnez Tarín (50):
       - Fixed SonataAdminBundle inconsistent behaviour with field null values.
       - Merge branch 'feature-sonata-admin' into develop
       - Bumped version to number 1.0.
+      - Merge branch 'release-1.0'
       - Merge branch 'release-1.0' into develop
       - Added LadybugBundle.
       - Merge branch 'feature-bundle-ladybug' into develop
       - Added ACL support.     - Added a new UserAdmin class with a new country test field.
       - Merge branch 'feature-acl' into develop
       - Bumped version to number 1.1.
+      - Merge branch 'release-1.1'
       - Merge branch 'release-1.1' into develop
       - Added JMS i18 Bundle, refactorized routes.     - Configured JMS Translator Bundle.     - Refactorized ACL configuration.     - Configured FOS User Bundle.     - Created unique configuration files with extra bundles.
       - Merge branch 'feature-locales' into develop
       - Customize and prepare FOS User Bundle register form domail logic.
       - Merge branch 'feature-bundle-fosuser-register' into develop
       - Bumped version to number 1.2.
+      - Merge branch 'release-1.2'
       - Merge branch 'release-1.2' into develop
       - Refactorized FOSUserBundle register domain logic.
       - Refactorized login via FOSUserBundle.     - Refactorized register via FOSUserBundle.
       - Merge branch 'feature-bundle-fosuser-refactoring' into develop
       - Burned version to number 1.3.
+      - Merge branch 'release-1.3'
       - Merge branch 'release-1.3' into develop
       - Added new icons to Twitter Bootstrap frontend theme.
       - Merge branch 'feature-frontend-theme-update' into develop
       - Added Doctrine fixtures for Users and Groups.     - Changed security strategy to role after performance issues with ACL.
       - Merge branch 'feature-fixtures' into develop
       Bumped version to number 1.4.
+      - Merge branch 'release-1.4'
       - Merge branch 'release-1.4' into develop
       - Fixed security listener to add ROLE_ADMIN mapping.
       - Merge branch 'feature-security-roles' into develop
       Bumped version to number 1.4.1.
+      - Merge branch 'release-1.4.1'
       - Merge branch 'release-1.4.1' into develop
       - Refactorized frontend theme.     - Refactoried admin theme.
       - Merge branch 'feature-clean-frontend-home' into develop
       - Bumped version to number 1.5.
+      - Merge branch 'release-1.5'
       - Merge branch 'release-1.5' into develop
       - Added production CSS assets.
       - Merge branch 'feature-fosuser-production-assets' into develop
       - Bumped version to number 1.5.1.
+      - Merge branch 'release-1.5.1'
       - Merge branch 'release-1.5.1' into develop
       - Added wireframe images to frontend home page.     - Refactorized views to encapsulate twig blocks.
       - Merge branch 'feature-frontend-dummycode' into develop
       - Bumped version to number 1.6.
+      - Merge branch 'release-1.6'
       - Merge branch 'release-1.6' into develop
       - Added some wireframes.
       - Fixed README.md image paths.
       - Merge branch 'feature-frontend-wireframes' into develop
+      - Bumped version to number 1.6.1.
+      - Merge branch 'release-1.6.1'
+
+Julio Antúnez Tarín (1):
+      Update README.md
 
